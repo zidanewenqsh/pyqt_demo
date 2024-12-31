@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Fine Alignment</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <!-- 图像显示 -->
+   <widget class="QLabel" name="image_label_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>370</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Image 1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="image_label_2">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>10</y>
+      <width>370</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Image 2</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <!-- 上传图片按钮 -->
+   <widget class="QPushButton" name="button_load_image_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Load Image 1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_load_image_2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>220</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Load Image 2</string>
+    </property>
+   </widget>
+   <!-- 操作按钮 -->
+   <widget class="QPushButton" name="button_coarse_align">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>220</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Coarse Align</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_enable_fine_tune">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>220</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enable Fine Tune</string>
+    </property>
+   </widget>
+   <!-- 微调控件 -->
+   <widget class="QSlider" name="slider_translate_x">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="toolTip">
+     <string>Translate X</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_translate_y">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>300</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="toolTip">
+     <string>Translate Y</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_rotate">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>330</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="toolTip">
+     <string>Rotate</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_scale">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>360</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="toolTip">
+     <string>Scale</string>
+    </property>
+   </widget>
+   <!-- 日志窗口 -->
+   <widget class="QTextEdit" name="log_window">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>770</width>
+      <height>200</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

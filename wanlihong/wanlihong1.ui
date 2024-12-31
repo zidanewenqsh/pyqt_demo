@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Portrait Identity Analysis</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <!-- 下拉列表 -->
+   <widget class="QComboBox" name="task_selector">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>700</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="currentText">
+     <string>Select Task</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Task 1: Identity Analysis</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Task 2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Task 3</string>
+     </property>
+    </item>
+    <!-- Add more tasks up to 32 -->
+    <item>
+     <property name="text">
+      <string>Task 32</string>
+     </property>
+    </item>
+   </widget>
+   <!-- QStackedWidget -->
+   <widget class="QStackedWidget" name="stacked_widget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>800</width>
+      <height>550</height>
+     </rect>
+    </property>
+    <!-- Page 1: Task 1 -->
+    <widget class="QWidget" name="page_task1">
+     <widget class="QLabel" name="label_image1">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>0</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Image 1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_image2">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>0</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Image 2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_load_image1">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>220</y>
+        <width>300</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Load Image 1</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_load_image2">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>220</y>
+        <width>300</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Load Image 2</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_analyze">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>270</y>
+        <width>300</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Analyze Similarity</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_result">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>320</y>
+        <width>300</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Result: N/A</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <!-- Page 2: Task 2 (Empty) -->
+    <widget class="QWidget" name="page_task2"/>
+    <!-- Add more pages for other tasks -->
+    <widget class="QWidget" name="page_task32"/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>task_selector</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>stacked_widget</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>25</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>400</x>
+     <y>275</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>案件卷宗管理工具</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tab_widget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>880</width>
+      <height>680</height>
+     </rect>
+    </property>
+    <!-- Tab 1: 案件卷宗信息 -->
+    <widget class="QWidget" name="tab_case_info">
+     <attribute name="title">
+      <string>案件卷宗信息</string>
+     </attribute>
+     <widget class="QTextEdit" name="textedit_case_info">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>850</width>
+        <height>630</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <!-- Tab 2: 检材和样本 -->
+    <widget class="QWidget" name="tab_materials">
+     <attribute name="title">
+      <string>检材和样本</string>
+     </attribute>
+     <widget class="QLabel" name="label_image1">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>50</y>
+        <width>300</width>
+        <height>400</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Image 1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_image2">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>50</y>
+        <width>300</width>
+        <height>400</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Image 2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+     </widget>
+    </widget>
+    <!-- Tab 3: 预处理结果 -->
+    <widget class="QWidget" name="tab_preprocessing">
+     <attribute name="title">
+      <string>预处理结果</string>
+     </attribute>
+     <widget class="QTextEdit" name="textedit_preprocessing_results">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>850</width>
+        <height>630</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <!-- Tab 4: 特征比对 -->
+    <widget class="QWidget" name="tab_feature_comparison">
+     <attribute name="title">
+      <string>特征比对</string>
+     </attribute>
+     <widget class="QTextEdit" name="textedit_feature_comparison">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>850</width>
+        <height>630</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <!-- Tab 5: 测量比对 -->
+    <widget class="QWidget" name="tab_measurement_comparison">
+     <attribute name="title">
+      <string>测量比对</string>
+     </attribute>
+     <widget class="QTextEdit" name="textedit_measurement_comparison">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>850</width>
+        <height>630</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+</ui>

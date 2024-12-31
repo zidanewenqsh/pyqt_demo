@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>文书生成工具</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <!-- 顺序调整列表 -->
+   <widget class="QListWidget" name="listwidget_order">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>50</y>
+      <width>400</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="dragDropMode">
+     <enum>QAbstractItemView::InternalMove</enum>
+    </property>
+   </widget>
+   <!-- 上移按钮 -->
+   <widget class="QPushButton" name="button_move_up">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>200</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Move Up</string>
+    </property>
+   </widget>
+   <!-- 下移按钮 -->
+   <widget class="QPushButton" name="button_move_down">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>250</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Move Down</string>
+    </property>
+   </widget>
+   <!-- 导出 Word 按钮 -->
+   <widget class="QPushButton" name="button_export_word">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>400</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Export Word</string>
+    </property>
+   </widget>
+   <!-- 加载模板按钮 -->
+   <widget class="QPushButton" name="button_load_template">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>450</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Load Template</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+</ui>

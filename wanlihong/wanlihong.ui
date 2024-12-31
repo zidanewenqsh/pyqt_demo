@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Portrait Analysis System</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1180</width>
+      <height>700</height>
+     </rect>
+    </property>
+
+    <!-- Tab 1: Case Management -->
+    <widget class="QWidget" name="tab_case_management">
+     <attribute name="title">
+      <string>Case Management</string>
+     </attribute>
+     <widget class="QTableWidget" name="table_case_files">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>1150</width>
+        <height>600</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_new_case">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>620</y>
+        <width>150</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>New Case</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_import_case">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>620</y>
+        <width>150</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Import Case</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_modify_case">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>620</y>
+        <width>150</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Modify Case</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_delete_case">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>620</y>
+        <width>150</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Delete Case</string>
+      </property>
+     </widget>
+    </widget>
+
+    <!-- Tab 2: Image Preprocessing -->
+    <widget class="QWidget" name="tab_preprocessing">
+     <attribute name="title">
+      <string>Preprocessing</string>
+     </attribute>
+     <widget class="QLabel" name="label_original_image">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>570</width>
+        <height>320</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Original Image</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_processed_image">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>10</y>
+        <width>570</width>
+        <height>320</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Processed Image</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="combo_preprocessing_method">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>350</y>
+        <width>300</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="currentText">
+       <string>Select Preprocessing Method</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_apply_preprocessing">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>350</y>
+        <width>150</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Apply</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_restore_image">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>350</y>
+        <width>150</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Restore Original</string>
+      </property>
+     </widget>
+    </widget>
+
+    <!-- Additional Tabs for Alignment, Annotation, Comparison, etc. -->
+    <!-- Each Tab is structured similarly with specific components -->
+
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <addaction name="menuFile"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="menuFile">
+   <property name="text">
+    <string>File</string>
+   </property>
+  </action>
+  <action name="menuHelp">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
